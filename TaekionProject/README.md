@@ -25,7 +25,7 @@ Together, we're excited to combine our skills and tackle this project with fresh
 
 Stay tuned as we document our journey and share the progress of this exciting project!
 
-## Author
+## Authors
 
 - [@Drialis](https://www.github.com/Drialis)
 - [@Liria](https://portfolio-paloma-rehecho.netlify.app/)
