@@ -1,15 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import './AppRoutes.css'
 
-import SignupPage from "../pages/SignupPage/SignupPage.jsx";
-
-import Homepage from "../pages/Homepage/Homepage.jsx";
+import Homepage from "../pages/HomePage/HomePage.jsx";
 import BlogPage from "../pages/BlogPage/BlogPage.jsx";
-import PostDetailsPage from "../pages/PostDetailsPage/PostDetailsPage.jsx";
 
+import SignupPage from "../pages/SignupPage/SignupPage";
+import UserProfilePage from '../pages/UserProfilePage/UserProfilePage.jsx'
+import EditUserProfilePage from '../pages/EditUserProfile/EditUserProfile.jsx'
 
-import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
-//import PrivateRoute from "./PrivateRoute.jsx";
+// import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
+import PrivateRoute from "./PrivateRoute.jsx";
 
 
 
@@ -20,17 +19,24 @@ const AppRoutes = () => {
         <Route path={"/"} element={<Homepage />} />
         <Route path={"/signup"} element={<SignupPage />} />
         <Route path={"/blog"} element={<BlogPage />} />
-        <Route path={"/blog/:postId"} element={<PostDetailsPage />} />
+        {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
 
-        {/* <Route element={<PrivateRoute />}> */}
-        {/* <Route element={<PrivateRoute onlyAdmin={true} />}> */}
-        {/* </Route> */}
-        {/* </Route> */}
+         <Route element={<PrivateRoute />}> 
 
-        <Route path={"/*"} element={<NotFoundPage />} />
+        <Route path={"/profile"} element={<UserProfilePage />} />
+        <Route path={"/profile/edit"} element={<EditUserProfilePage />} />
+
+         </Route> 
+
+        <Route element={<PrivateRoute onlyAdmin={true} />}>
+
+
+        </Route>
+
+        {/* <Route path={"/*"} element={<NotFoundPage />} /> */}
 
       </Routes>
-    </div >
+    </div>
   )
 }
 
