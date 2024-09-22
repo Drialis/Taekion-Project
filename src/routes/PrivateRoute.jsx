@@ -1,8 +1,9 @@
 import { useContext } from "react"
 import { Outlet, Navigate } from "react-router-dom"
-import { AuthContext } from "../contexts/auth.context"
+import { AuthContext } from '../context/auth.context.jsx'
+import Loader from "../components/Loader/Loader"
 
-const PrivateRoute = ({ onlyAdmin }) => {
+ const PrivateRoute = ({onlyAdmin}) => {
 
     const { logout, loggedUser, isLoading } = useContext(AuthContext)
 
@@ -15,6 +16,6 @@ const PrivateRoute = ({ onlyAdmin }) => {
     }
 
     return <Outlet />
-}
+ }
 
-export default PrivateRoute
+ export default PrivateRoute
