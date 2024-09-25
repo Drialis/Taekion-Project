@@ -9,24 +9,25 @@ import EditUserProfilePage from '../pages/EditUserProfile/EditUserProfile.jsx'
 
 // import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import PrivateRoute from "./PrivateRoute.jsx";
+import { Container } from "react-bootstrap";
 
 
 
 const AppRoutes = () => {
   return (
-    <div className="AppRoutes">
+    <Container fluid className="AppRoutes">
       <Routes>
         <Route path={"/"} element={<Homepage />} />
         <Route path={"/signup"} element={<SignupPage />} />
         <Route path={"/blog"} element={<BlogPage />} />
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
 
-         <Route element={<PrivateRoute />}> 
+        <Route element={<PrivateRoute />}> 
 
         <Route path={"/profile"} element={<UserProfilePage />} />
         <Route path={"/profile/edit"} element={<EditUserProfilePage />} />
 
-         </Route> 
+        </Route> 
 
         <Route element={<PrivateRoute onlyAdmin={true} />}>
 
@@ -36,7 +37,7 @@ const AppRoutes = () => {
         {/* <Route path={"/*"} element={<NotFoundPage />} /> */}
 
       </Routes>
-    </div>
+    </Container>
   )
 }
 

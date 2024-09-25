@@ -1,20 +1,19 @@
 import AppRoutes from '../routes/AppRoutes'
-import './App.css'
-import Footer from '../components/Footer/Footer'
 import Navigation from '../components/Navigation/Navigation'
+import Footer from '../components/Footer/Footer'
+import './App.css'
+import { Container } from 'react-bootstrap'
 
 const App = () => {
 
     return (
-        <div className='App'>
+        <Container fluid className='App'>
 
             <Navigation />
-
             <AppRoutes />
-
             <Footer />
 
-        </div>
+        </Container>
     )
 }
 

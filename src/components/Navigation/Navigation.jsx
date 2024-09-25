@@ -9,12 +9,12 @@ const Navigation = () => {
 
 
     return (
-        <Navbar expand="lg" className="Navbar align-items-center" expanded={expanded}>
-            <Container className='ContainerNavbar'>
+        <Navbar expand="lg" className="Navigation align-items-center" expanded={expanded}>
+            <Container fluid className='ContainerNavbar'>
                 <Navbar.Brand href="/" className="BrandTitle"><Image src=""></Image></Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
-                    className="Navicon"
+                    className="Navigation"
                     onClick={() => setExpanded(!expanded)}
                 >
                     <img
@@ -28,11 +28,14 @@ const Navigation = () => {
                         <Link to="/blog" className="nav-link" onClick={() => setExpanded(false)}>
                             <p>Blog</p>
                         </Link>
-                        <Link to="/it-tools" className="nav-link" onClick={() => setExpanded(false)}>
+                        <Link to="/signup" className="nav-link" onClick={() => setExpanded(false)}>
+                            <p>SignUp</p>                        
                         </Link>
-                        <Link to="/about-me" className="nav-link" onClick={() => setExpanded(false)}>
+                        <Link to="/profile" className="nav-link" onClick={() => setExpanded(false)}>
+                            <p>Profile</p>
                         </Link>
                         <Link to="/contact" className="nav-link" onClick={() => setExpanded(false)}>
+                            <p>Blog</p>                        
                         </Link>
                     </Nav>
                 </Navbar.Collapse>

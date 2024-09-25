@@ -1,0 +1,13 @@
+.Homepage {
+    background-color: rgba(232, 253, 236, 1);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.Homepage .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    margin-bottom: 50px !important;
+    width: 100vw !important;
+}
