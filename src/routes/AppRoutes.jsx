@@ -6,6 +6,7 @@ import BlogPage from "../pages/BlogPage/BlogPage.jsx";
 import SignupPage from "../pages/SignupPage/SignupPage";
 import UserProfilePage from '../pages/UserProfilePage/UserProfilePage.jsx'
 import EditUserProfilePage from '../pages/EditUserProfile/EditUserProfile.jsx'
+import ReservationPage from "../pages/ReservationPage/ReservationPage.jsx";
 
 // import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import PrivateRoute from "./PrivateRoute.jsx";
@@ -20,6 +21,7 @@ const AppRoutes = () => {
         <Route path={"/"} element={<Homepage />} />
         <Route path={"/signup"} element={<SignupPage />} />
         <Route path={"/blog"} element={<BlogPage />} />
+        <Route path={"/reserva-tu-clase"} element={<ReservationPage/>}/>
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
 
         <Route element={<PrivateRoute />}> 
