@@ -9,7 +9,6 @@ const Homepage = () => {
                 <Card.Text>
                     TAEKION FIRGAS
                 </Card.Text>
-
             </Card>
             <CarouselHome/>
         </Container>
