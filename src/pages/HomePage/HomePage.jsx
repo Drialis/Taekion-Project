@@ -7,8 +7,9 @@ const Homepage = () => {
         <Container fluid className="Homepage g-0">
             <Card>
                 <Card.Text>
-                    <p>TAEKION FIRGAS</p>
+                    TAEKION FIRGAS
                 </Card.Text>
+
             </Card>
             <CarouselHome/>
         </Container>
