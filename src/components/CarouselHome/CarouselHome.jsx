@@ -1,7 +1,9 @@
 import { Image } from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel';
 
-function CarouselHome() {
+const CarouselHome = () => {
+
+
   return (
     <Carousel>
       <Carousel.Item interval={20000}>
@@ -24,6 +26,7 @@ function CarouselHome() {
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
+
   );
 }
 
