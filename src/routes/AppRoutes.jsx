@@ -12,6 +12,7 @@ import LegendsDetailsPage from "../pages/LegendsDetailsPage/LegendsDetailsPage.j
 
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import PrivateRoute from "./PrivateRoute.jsx";
+import LoginPage from "../pages/LoginPage/LoginPage.jsx";
 
 
 
@@ -24,7 +25,8 @@ const AppRoutes = () => {
         <Route path={"/blog"} element={<BlogPage />} />
         <Route path={"/reserva-tu-clase"} element={<ReservationPage/>}/>
         <Route path={"/leyendas-de-la-escuela"} element={<LegendsPage/>}/>
-        <Route path={"/leyendas-de-la-escuela/:Id"}  element={<LegendsDetailsPage/>}/>
+        <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
+        <Route path={'/login'} element={<LoginPage/>}/>
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
 
         <Route element={<PrivateRoute />}> 
