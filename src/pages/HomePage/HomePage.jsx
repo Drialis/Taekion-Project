@@ -35,7 +35,7 @@ const Homepage = () => {
                     TAEKION FIRGAS
                 </Card.Text>
             </Card>
-            <CarouselHome/>
+            <CarouselHome className="CarouselHome"/>
                 </>
             }
 

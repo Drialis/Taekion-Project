@@ -2,9 +2,12 @@ import { Container } from "react-bootstrap"
 
 const BlogPage = () => {
 
-    <Container>
+    return(
 
-    </Container>
+        <Container>
+        BLOG
+        </Container>
+    )
 }
 
 export default BlogPage

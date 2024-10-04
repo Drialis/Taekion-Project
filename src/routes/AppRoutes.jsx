@@ -1,5 +1,6 @@
 import { Routes, Route } from "react-router-dom";
 import { Container } from "react-bootstrap";
+import './AppRoutes.css'
 
 import Homepage from "../pages/HomePage/HomePage.jsx";
 import BlogPage from "../pages/BlogPage/BlogPage.jsx";
@@ -12,8 +13,6 @@ import LegendsDetailsPage from "../pages/LegendsDetailsPage/LegendsDetailsPage.j
 
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import PrivateRoute from "./PrivateRoute.jsx";
-import LoginPage from "../pages/LoginPage/LoginPage.jsx";
-
 
 
 const AppRoutes = () => {
@@ -26,7 +25,6 @@ const AppRoutes = () => {
         <Route path={"/reserva-tu-clase"} element={<ReservationPage/>}/>
         <Route path={"/leyendas-de-la-escuela"} element={<LegendsPage/>}/>
         <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
-        <Route path={'/login'} element={<LoginPage/>}/>
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
 
         <Route element={<PrivateRoute />}> 
