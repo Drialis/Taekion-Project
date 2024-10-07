@@ -13,9 +13,9 @@ const LegendsList = () => {
                 ?
                 <Loader/>
                 :
-            <Container >
+            <Container className="mt-3">
             <Row>
-                <Col sm={{span: 3, offset: 3}}>
+                <Col sm={{span: 4}} md={{span: 4}} lg={{span: 4}}>
                     <Card>
                         <Card.Title>
                             MIGUEL ÁNGEL SANTIAGO RUIZ
@@ -28,33 +28,75 @@ const LegendsList = () => {
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={{span: 3}}>
                     <Card>
                         <Card.Title>
-                            MIGUEL ÁNGEL SANTIAGO RUIZ
+                            JUAN CARLOS CABRERA
                         </Card.Title>
                         <Card.Img>
 
                         </Card.Img>
                         <Card.Text>
-                            Maestro
+                            4º DAN
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col>
+                <Col sm={{span: 3}}>
                     <Card>
                         <Card.Title>
-                            MIGUEL ÁNGEL SANTIAGO RUIZ
+                            PALOMA REHECHO
                         </Card.Title>
                         <Card.Img>
 
                         </Card.Img>
                         <Card.Text>
-                            Maestro
+                            Entrenadora 5º DAN
                         </Card.Text>
                     </Card>
                 </Col>
             </Row>
+                        <Row className="mt-5">
+                <Col sm={{span: 4}} md={{span: 4}} lg={{span: 4}}>
+                    <Card>
+                        <Card.Title>
+                            PABLO CABEZA
+                        </Card.Title>
+                        <Card.Img>
+
+                        </Card.Img>
+                        <Card.Text>
+                            1º DAN
+                        </Card.Text>
+                    </Card>
+                </Col>
+                <Col sm={{span: 3}}>
+                    <Card>
+                        <Card.Title>
+                            MOISÉS 
+                        </Card.Title>
+                        <Card.Img>
+
+                        </Card.Img>
+                        <Card.Text>
+                            5º DAN
+                        </Card.Text>
+                    </Card>
+                </Col>
+                <Col sm={{span: 3}}>
+                    <Card>
+                        <Card.Title>
+                            PALOMA REHECHO
+                        </Card.Title>
+                        <Card.Img>
+
+                        </Card.Img>
+                        <Card.Text>
+                            Entrenadora 5º DAN
+                        </Card.Text>
+                    </Card>
+                </Col>
+            </Row>
+            
         </Container>
         }
         </div>
