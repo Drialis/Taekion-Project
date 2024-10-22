@@ -20,9 +20,7 @@ const LegendsList = () => {
                         <Card.Title>
                             MIGUEL ÁNGEL SANTIAGO RUIZ
                         </Card.Title>
-                        <Card.Img>
-
-                        </Card.Img>
+                        <Card.Img src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1716798206/Wave%20Scope/gallotia_1_tdnfdd.jpg"/>
                         <Card.Text>
                             Maestro
                         </Card.Text>
@@ -72,26 +70,26 @@ const LegendsList = () => {
                 <Col sm={{span: 3}}>
                     <Card>
                         <Card.Title>
-                            MOISÉS 
+                            MOISÉS CARDONA
                         </Card.Title>
                         <Card.Img>
 
                         </Card.Img>
                         <Card.Text>
-                            5º DAN
+                            1º DAN
                         </Card.Text>
                     </Card>
                 </Col>
                 <Col sm={{span: 3}}>
                     <Card>
                         <Card.Title>
-                            PALOMA REHECHO
+                            RAFAEL CAMPANALUNGA
                         </Card.Title>
                         <Card.Img>
 
                         </Card.Img>
                         <Card.Text>
-                            Entrenadora 5º DAN
+                            1º DAN
                         </Card.Text>
                     </Card>
                 </Col>
