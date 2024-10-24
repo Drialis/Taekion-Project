@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { useNavigate } from "react-router-dom"
-import { Container, Form } from "react-bootstrap"
+import { Form } from "react-bootstrap"
 import './NewLegendForm.css'  
 
 const NewLegendForm = () => {

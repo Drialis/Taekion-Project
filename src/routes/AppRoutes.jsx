@@ -13,11 +13,12 @@ import LegendsDetailsPage from "../pages/LegendsDetailsPage/LegendsDetailsPage.j
 
 import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
 import PrivateRoute from "./PrivateRoute.jsx";
+import LegendsFormPage from "../pages/LegendsFormPage/LegendsFormPage.jsx";
 
 
 const AppRoutes = () => {
   return (
-    <Container fluid className="AppRoutes">
+    <Container className="AppRoutes">
       <Routes>
         <Route path={"/"} element={<Homepage />} />
         <Route path={"/signup"} element={<SignupPage />} />
@@ -26,6 +27,9 @@ const AppRoutes = () => {
         <Route path={"/leyendas-de-la-escuela"} element={<LegendsPage/>}/>
         <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
+        
+        {/* Esta ruta debería ser privada y acceder a ella solo a través del perfil del admin */}
+        <Route path={"/new-legend"} element={<LegendsFormPage/>}/>
 
         <Route element={<PrivateRoute />}> 
           <Route path={"/profile"} element={<UserProfilePage />} />
