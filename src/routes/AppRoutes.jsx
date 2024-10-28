@@ -1,6 +1,4 @@
 import { Routes, Route } from "react-router-dom";
-import { Container } from "react-bootstrap";
-import './AppRoutes.css'
 
 import Homepage from "../pages/HomePage/HomePage.jsx";
 import BlogPage from "../pages/BlogPage/BlogPage.jsx";
@@ -11,14 +9,13 @@ import ReservationPage from "../pages/ReservationPage/ReservationPage.jsx";
 import LegendsPage from "../pages/LegendsPage/LegendsPage.jsx";
 import LegendsDetailsPage from "../pages/LegendsDetailsPage/LegendsDetailsPage.jsx";
 
-import NotFoundPage from "../pages/NotFoundPage/NotFoundPage";
+import NotFoundPage from '../pages/NotFoundPage/NotFoundPage.jsx'
 import PrivateRoute from "./PrivateRoute.jsx";
 import LegendsFormPage from "../pages/LegendsFormPage/LegendsFormPage.jsx";
 
 
 const AppRoutes = () => {
   return (
-    <Container className="AppRoutes">
       <Routes>
         <Route path={"/"} element={<Homepage />} />
         <Route path={"/signup"} element={<SignupPage />} />
@@ -28,8 +25,6 @@ const AppRoutes = () => {
         <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
         {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
         
-        {/* Esta ruta debería ser privada y acceder a ella solo a través del perfil del admin */}
-        <Route path={"/new-legend"} element={<LegendsFormPage/>}/>
 
         <Route element={<PrivateRoute />}> 
           <Route path={"/profile"} element={<UserProfilePage />} />
@@ -37,11 +32,11 @@ const AppRoutes = () => {
         </Route> 
         
         <Route element={<PrivateRoute onlyAdmin={true} />}/>
+        {/* Esta ruta debería ser privada y acceder a ella solo a través del perfil del admin */}
+        <Route path={"/new-legend"} element={<LegendsFormPage/>}/>
 
-        <Route path={"/*"} element={<NotFoundPage />} /> 
-
+        <Route path="/*" element={<NotFoundPage/>}/> 
       </Routes>
-    </Container>
   )
 }
 

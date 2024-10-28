@@ -23,7 +23,7 @@ const Homepage = () => {
     // }, []);
 
     return (
-        <Container fluid className="Homepage g-0">
+        <Container className="Homepage g-0">
             {
                 isLoading
                 ?

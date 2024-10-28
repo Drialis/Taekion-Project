@@ -1,8 +1,9 @@
 import { Container } from "react-bootstrap"
+import './NotFoundPage.css'
 
 const NotFoundPage = () => {
 
-    <Container> KICK NOT FOUND </Container>
+    <Container className="NotFoundPage g-0"> KICK NOT FOUND </Container>
 
 }
 
