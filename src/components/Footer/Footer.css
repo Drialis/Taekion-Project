@@ -1,11 +1,13 @@
 .Footer {
     background-color: rgba(149, 176, 104, 1);
+    width: 100%;
     color: rgba(142, 35, 88, 1);
     text-align: center;
     padding: 50px;
     position: relative;
     bottom: 0;
     margin-top: 60px;
+    box-sizing: border-box;
 }
 
 .Footer p {
