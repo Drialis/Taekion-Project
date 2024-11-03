@@ -10,7 +10,7 @@ const Navigation = () => {
 
     return (
         <Navbar expand="lg" className="Navigation align-items-center" expanded={expanded}>
-            <Container fluid className='ContainerNavbar'>
+            <Container fluid className='ContainerNavbar pt-3'>
                 <Navbar.Brand href="/" className="BrandTitle"><Image src=""></Image></Navbar.Brand>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"

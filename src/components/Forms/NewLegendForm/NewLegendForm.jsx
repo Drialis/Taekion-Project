@@ -49,18 +49,43 @@ const handleLegendForSubmit = async (e) => {
 
 
 return (
-<Form className="NewLegendForm" onSubmit={handleLegendForSubmit}>
-    <Form.Group>
-        <Form.Label>Nombre y apellidos de la nueva leyenda</Form.Label>
-        <Form.Control 
-        placeholder="Miguel Ángel Santiago Ruiz" 
-        name="name" 
-        value={legendData.name} 
-        onChange={handleInputChange} 
-        required/>
+
+ <Form className="NewLegendForm" onSubmit={handleLegendForSubmit}>
+    <Form.Group className="mb-4">
+    <Form.Label>Nombre y apellidos de la nueva leyenda</Form.Label>
+    <Form.Control 
+    placeholder="Miguel Ángel Santiago Ruiz" 
+    name="name" 
+    value={legendData.name} 
+    onChange={handleInputChange} 
+    required/>
     </Form.Group>
 
-</Form>
+    <Form.Group className="mb-4">
+    <Form.Label>Resumen de la historia de esta leyenda</Form.Label>
+    <Form.Control
+    as="textarea"
+    placeholder="Lorem ipsum tralará"
+    name="mainText"
+    value={legendData.mainText}
+    onChange={handleInputChange}
+    required
+    />
+    </Form.Group>
+
+    <Form.Group className="mb-4">
+    <Form.Label>Párrafos</Form.Label>
+    <Form.Control
+    as="textarea"
+    placeholder="Lorem ipsum tralará"
+    name="mainText"
+    value={legendData.paragraphs}
+    onChange={handleInputChange}
+    required
+    />
+    </Form.Group>
+
+    </Form> 
 
 )
 }

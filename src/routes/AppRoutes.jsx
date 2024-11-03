@@ -23,7 +23,6 @@ const AppRoutes = () => {
         <Route path={"/reserva-tu-clase"} element={<ReservationPage/>}/>
         <Route path={"/leyendas-de-la-escuela"} element={<LegendsPage/>}/>
         <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
-        {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
         
 
         <Route element={<PrivateRoute />}> 
@@ -32,9 +31,10 @@ const AppRoutes = () => {
         </Route> 
         
         <Route element={<PrivateRoute onlyAdmin={true} />}/>
-        {/* Esta ruta debería ser privada y acceder a ella solo a través del perfil del admin */}
+        {/*Esta ruta debería ser privada y acceder a ella solo a través del perfil del admin */}
         <Route path={"/new-legend"} element={<LegendsFormPage/>}/>
-
+        {/* <Route path={"/blog/:postId"} element={<PostDetailsPage />} /> */}
+        
         <Route path="/*" element={<NotFoundPage/>}/> 
       </Routes>
   )

@@ -1,4 +1,5 @@
 import { Card, Col, Container, Row } from "react-bootstrap"
+import './LegendsList.css'
 import Loader from "../Loader/Loader"
 import { useState } from "react"
 
@@ -13,9 +14,9 @@ const LegendsList = () => {
                 ?
                 <Loader/>
                 :
-            <Container className="mt-3">
+            <Container className="LegendsList">
             <Row>
-                <Col sm={{span: 4}} md={{span: 4}} lg={{span: 4}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}}>
                     <Card>
                         <Card.Title>
                             MIGUEL ÁNGEL SANTIAGO RUIZ
@@ -26,7 +27,7 @@ const LegendsList = () => {
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col sm={{span: 3}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}}>
                     <Card>
                         <Card.Title>
                             JUAN CARLOS CABRERA
@@ -39,7 +40,7 @@ const LegendsList = () => {
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col sm={{span: 3}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}}>
                     <Card>
                         <Card.Title>
                             PALOMA REHECHO
@@ -54,7 +55,7 @@ const LegendsList = () => {
                 </Col>
             </Row>
                         <Row className="mt-5">
-                <Col sm={{span: 4}} md={{span: 4}} lg={{span: 4}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}} >
                     <Card>
                         <Card.Title>
                             PABLO CABEZA
@@ -67,7 +68,7 @@ const LegendsList = () => {
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col sm={{span: 3}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}}>
                     <Card>
                         <Card.Title>
                             MOISÉS CARDONA
@@ -80,7 +81,7 @@ const LegendsList = () => {
                         </Card.Text>
                     </Card>
                 </Col>
-                <Col sm={{span: 3}}>
+                <Col sm={{span: 12}} md={{span: 4}} lg={{span:4}}>
                     <Card>
                         <Card.Title>
                             RAFAEL CAMPANALUNGA

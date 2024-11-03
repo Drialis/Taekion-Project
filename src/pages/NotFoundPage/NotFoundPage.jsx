@@ -3,7 +3,10 @@ import './NotFoundPage.css'
 
 const NotFoundPage = () => {
 
-    <Container className="NotFoundPage g-0"> KICK NOT FOUND </Container>
+    return (
+
+        <Container className="NotFoundPage g-0"> KICK NOT FOUND </Container>
+    )
 
 }
 
