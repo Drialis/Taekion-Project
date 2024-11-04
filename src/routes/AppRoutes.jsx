@@ -12,6 +12,7 @@ import LegendsDetailsPage from "../pages/LegendsDetailsPage/LegendsDetailsPage.j
 import NotFoundPage from '../pages/NotFoundPage/NotFoundPage.jsx'
 import PrivateRoute from "./PrivateRoute.jsx";
 import LegendsFormPage from "../pages/LegendsFormPage/LegendsFormPage.jsx";
+import ContactPage from "../pages/ContactPage/ContactPage.jsx";
 
 
 const AppRoutes = () => {
@@ -23,6 +24,7 @@ const AppRoutes = () => {
         <Route path={"/reserva-tu-clase"} element={<ReservationPage/>}/>
         <Route path={"/leyendas-de-la-escuela"} element={<LegendsPage/>}/>
         <Route path={"/leyendas-de-la-escuela/:id"} element={<LegendsDetailsPage/>}/>
+        <Route path={"/contacto"} element={<ContactPage/>}/>
         
 
         <Route element={<PrivateRoute />}> 

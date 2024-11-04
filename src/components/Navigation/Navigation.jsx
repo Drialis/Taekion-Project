@@ -34,7 +34,7 @@ const Navigation = () => {
                         <Link to="/leyendas-de-la-escuela" className="nav-link" onClick={() => setExpanded(false)}>
                             <p>Leyendas de la escuela</p>
                         </Link>
-                        <Link to="/contact" className="nav-link" onClick={() => setExpanded(false)}>
+                        <Link to="/contacto" className="nav-link" onClick={() => setExpanded(false)}>
                             <p>Contacto</p>                        
                         </Link>
                     </Nav>
