@@ -1,0 +1,22 @@
+.container.ContactPage {
+    max-width: 100% !important;
+    width: auto !important;
+    min-height: 100vh !important;
+    margin-top: 40px !important;
+}
+.ContactPage * {
+    box-sizing: content-box !important;
+}
+
+.Title {
+    font-size: 1.4em;
+    font-weight: 600;
+}
+
+.ContactRow {
+    padding: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+    
