@@ -1,5 +1,6 @@
-import { Col, Container, Image, Row } from "react-bootstrap"
+import { Button, Col, Container, Image, Row } from "react-bootstrap"
 import './ContactPage.css'
+import { Link } from "react-router-dom"
 
 const ContactPage = () => {
 
@@ -8,7 +9,8 @@ const ContactPage = () => {
     return (
         <Container className="ContactPage">
             <Row className="ContactRow Title">
-                <Col>TAEKION FIRGAS</Col>
+                <Col><Link to='/'>TAEKION FIRGAS</Link>
+                    </Col>
             </Row>
             <Row className="ContactRow">
                 <Col>  Miguel Ángel Santiago Ruiz  </Col>
@@ -19,7 +21,7 @@ const ContactPage = () => {
             <Row className="ContactRow">
                 <Col>  taekionclubfirgas@hotmail.com  </Col>
             </Row>
-            <Row className="ContactRow">
+            <Row className="ContactRow Image">
                 <Col>
                 <Image src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1730812770/Captura_de_pantalla_2024-11-05_131813_kzql8j.png" alt="ubicación en google maps"/>
                 {/* <APIProvider apiKey={import.meta.env.GOOGLE_MAPS_API_KEY}>

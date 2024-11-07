@@ -19,4 +19,8 @@
     text-align: center;
 }
 
+/* Modificaremos este componente cuando cambiemos la imagen mockeada por el mapa real */
+.ContactRow img{
+    max-width: 500px;
+}
     
