@@ -5,7 +5,7 @@ const LegendsCard = () => {
         <Card>
             <Card.Title>
                             MOISÉS 
-                        </Card.Title>
+            </Card.Title>
                         <Card.Img>
 
                         </Card.Img>

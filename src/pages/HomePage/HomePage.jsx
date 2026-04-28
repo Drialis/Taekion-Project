@@ -2,6 +2,16 @@ import { Card, Container } from "react-bootstrap"
 import CarouselHome from "../../components/CarouselHome/CarouselHome"
 import Loader from '../../components/Loader/Loader'
 import { useState } from "react"
+import './HomePage.css'
+
+           //TO DO 
+                //MODO OSCURO
+                //Investigar cómo hacer el modo oscuro e implementarlo
+                
+                //CAROUSSEL
+                    //Hacer que el carousel ocupe todo el ancho de la pantalla aunque solo se vea una fracción de la imagen
+                    //Hacer más pequeña la altura para que visualmente no ocupe tanto
+                    //Subir imágenes de IA que impliquen ya un estilo
 
 const Homepage = () => {
 
@@ -23,19 +33,20 @@ const Homepage = () => {
     // }, []);
 
     return (
-        <Container className="Homepage g-0">
+        <Container>
             {
                 isLoading
                 ?
                 <Loader/>
                 :
                 <>
-                <Card>
-                <Card.Text>
-                    TAEKION FIRGAS
-                </Card.Text>
-            </Card>
-            <CarouselHome className="CarouselHome"/>
+            <h1 className="HomeTitle fs-1 fw-5">
+                TAEKION FIRGAS
+            </h1>
+           
+
+
+            <CarouselHome className="CarouselHome align-items-center"/>
                 </>
             }
 
