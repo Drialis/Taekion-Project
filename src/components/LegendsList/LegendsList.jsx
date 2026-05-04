@@ -21,7 +21,7 @@ const LegendsList = () => {
                         <Card.Title>
                             MIGUEL ÁNGEL SANTIAGO RUIZ
                         </Card.Title>
-                        <Card.Img src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1716798206/Wave%20Scope/gallotia_1_tdnfdd.jpg"/>
+                        <Card.Img src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1728852441/maestro_xetahl.jpg"/>
                         <Card.Text>
                             Maestro
                         </Card.Text>
@@ -45,7 +45,7 @@ const LegendsList = () => {
                         <Card.Title>
                             PALOMA REHECHO
                         </Card.Title>
-                        <Card.Img>
+                        <Card.Img src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1727544199/Spinner_zzaiu2.png">
 
                         </Card.Img>
                         <Card.Text>

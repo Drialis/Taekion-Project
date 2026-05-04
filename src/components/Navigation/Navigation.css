@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
 .Navigation {
-    background-color: rgba(149, 176, 104, 1);
+
     font-family: 'Space-Grotesk', sans-serif;
     font-weight: 300;
+
 }
 
 .nav-link {
@@ -60,4 +61,19 @@
     width: 30px;
     height: auto;
     margin-bottom: 20px;
+}
+.BrandTitle img{
+    width: 25%;
+    border-radius: 50%;
+
+}
+
+.NavSloganSmall{
+    color: white;
+}
+.NavSloganBig{
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 200;
 }

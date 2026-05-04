@@ -11,14 +11,16 @@ const Navigation = () => {
     return (
         <Navbar expand="lg" className="Navigation align-items-center" expanded={expanded}>
             <Container fluid className='ContainerNavbar pt-3'>
-                <Navbar.Brand href="/" className="BrandTitle"><Image src=""></Image></Navbar.Brand>
+                <Navbar.Brand href="/" className="BrandTitle"><Image src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1777834955/Dise%C3%B1o_sin_t%C3%ADtulo_6_vcrttm.png"></Image></Navbar.Brand>
+                <p className='NavSloganSmall'>Abriendo camino</p>
+                <h1 className='NavSloganBig'>STEP BY STEP</h1>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     className="Navigation"
                     onClick={() => setExpanded(!expanded)}
                 >
                     <img
-                        src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1728060848/Logo_Marca_Personal_Rojo_y_Rosa_1_uthkgy.png"
+                        src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1777830741/clipart3518256_lvruie.png"
                         alt="Nav icon"
                         className="NavIconImage"
                     />

@@ -1,20 +1,12 @@
 .HomePage {
-    background-color: rgba(232, 253, 236, 1);
     padding: 0 !important;
     margin: 0 !important;
     margin-bottom: 50px !important;
     width: 100vw !important;
 }
 
-.CarouselHome {
-    padding: 0 !important;
-    max-width: 800px !important;
-    max-height: 400px !important;
-    width: 100%;
-}
-
 .HomeTitle{
-    color: blue;
+    color: white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
     font-weight: 200;
