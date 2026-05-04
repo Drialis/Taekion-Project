@@ -1,7 +1,7 @@
 import { Container } from "react-bootstrap"
-import Loader from '../../components/Loader/Loader'
+import Loader from '../../components/Loader/Loader.jsx'
 import { useState } from "react"
-import './HomePage.css'
+import './Homepage.css'
 import CarouselLegends from'../../components/CarouselLegends/CarouselLegends.jsx'
            //TO DO 
                 //MODO CLARO
