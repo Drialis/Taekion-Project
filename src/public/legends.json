@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "Miguel Ángel Santiago",
+        "mainImage": "url",
+        "category": "Maestro",
+        "dan": "5º Dan"
+    },
+    {
+        "id": 2,
+        "name": "Juan Carlos Cabrera",
+        "mainImage": "url",
+        "dan": "4º Dan"
+    },
+    {
+        "id": 3,
+        "name": "Paloma Rehecho Antolín",
+        "mainImage": "url",
+        "category": "Entrenadora Regional",
+        "dan": "5º Dan"
+    },
+    {
+        "id": 4,
+        "name": "Moisés Cardona",
+        "mainImage": "url",
+        "dan": "5º Dan"
+    },
+    {
+        "id": 5,
+        "name": "Miguel Ángel Santiago Ruiz",
+        "mainImage": "url",
+        "category": "Maestro",
+        "dan": "5º Dan"
+    }
+]

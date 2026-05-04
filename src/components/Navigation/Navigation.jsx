@@ -6,17 +6,19 @@ import './Navigation.css'
 const Navigation = () => {
     const [expanded, setExpanded] = useState(false);
 
-
-
     return (
-        <Navbar expand="lg" className="Navigation align-items-center" expanded={expanded}>
-            <Container fluid className='ContainerNavbar pt-3'>
-                <Navbar.Brand href="/" className="BrandTitle"><Image src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1777834955/Dise%C3%B1o_sin_t%C3%ADtulo_6_vcrttm.png"></Image></Navbar.Brand>
+        <Navbar expand="lg" className="Navigation" expanded={expanded}>
+            <Container fluid className="NavContainer">
+                <Navbar.Brand href="/" className="BrandTitle">
+                    <Image src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1777834955/Dise%C3%B1o_sin_t%C3%ADtulo_6_vcrttm.png"></Image>
+                </Navbar.Brand>
+                <Navbar.Text className='NavSlogan'>
                 <p className='NavSloganSmall'>Abriendo camino</p>
                 <h1 className='NavSloganBig'>STEP BY STEP</h1>
+                </Navbar.Text>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
-                    className="Navigation"
+                    className="NavMenu"
                     onClick={() => setExpanded(!expanded)}
                 >
                     <img
@@ -25,6 +27,7 @@ const Navigation = () => {
                         className="NavIconImage"
                     />
                 </Navbar.Toggle>
+
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ml-auto fixed-right">
                         <Link to="/blog" className="nav-link" onClick={() => setExpanded(false)}>
@@ -41,7 +44,7 @@ const Navigation = () => {
                         </Link>
                     </Nav>
                 </Navbar.Collapse>
-            </Container>
+                </Container>
         </Navbar>
     );
 };

@@ -1,8 +1,8 @@
 .HomePage {
-    padding: 0 !important;
-    margin: 0 !important;
-    margin-bottom: 50px !important;
+    align-items: center;
     width: 100vw !important;
+    min-width: 100% !important;
+    border: 0 !important
 }
 
 .HomeTitle{
@@ -10,4 +10,5 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: xx-large;
     font-weight: 200;
+    margin-bottom: 20%;
 }

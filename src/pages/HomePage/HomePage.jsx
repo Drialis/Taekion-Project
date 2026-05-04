@@ -1,14 +1,14 @@
-import { Card, Container } from "react-bootstrap"
-import CarouselHome from "../../components/CarouselHome/CarouselHome"
+import { Container } from "react-bootstrap"
 import Loader from '../../components/Loader/Loader'
 import { useState } from "react"
 import './HomePage.css'
-import CarouselLegends from "../../components/CarouselLegends/CarouselLegends"
-
+import CarouselLegends from'../../components/CarouselLegends/CarouselLegends.jsx'
            //TO DO 
-                //MODO OSCURO
-                //Investigar cómo hacer el modo oscuro e implementarlo
-                
+                //MODO CLARO
+                //Investigar cómo hacer el ESTADO DE REACT para hacer ambos modos e implementarlo
+                //NAVIGATION 
+                //Grid de 3 columnas en las que aparecerá el logo a la izquierda, el texto en medio y el navicon a la derecha.
+                //En caso de no estar el navicon el menú no tendrá fondo y será pequeño
                 //CAROUSEL
                     //Hacer que el carousel ocupe todo el ancho de la pantalla aunque solo se vea una fracción de la imagen
                     //Hacer más pequeña la altura para que visualmente no ocupe tanto
@@ -34,7 +34,7 @@ const HomePage = () => {
     // }, []);
 
     return (
-        <Container>
+        <Container className="HomePage">
             {
                 isLoading
                 ?
@@ -44,8 +44,7 @@ const HomePage = () => {
             <h1 className="HomeTitle fs-1 fw-5">
                 LEYENDAS DE LA ESCUELA
             </h1>
-            <CarouselLegends></CarouselLegends>    
-            
+           <CarouselLegends/> 
                 </>
             }
 
