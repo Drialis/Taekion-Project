@@ -7,8 +7,8 @@ import CarouselLegends from'../../components/CarouselLegends/CarouselLegends.jsx
                 //MODO CLARO
                 //Investigar cómo hacer el ESTADO DE REACT para hacer ambos modos e implementarlo
                 //NAVIGATION 
-                //Grid de 3 columnas en las que aparecerá el logo a la izquierda, el texto en medio y el navicon a la derecha.
                 //En caso de no estar el navicon el menú no tendrá fondo y será pequeño
+                //hacer responsive los textos
                 //CAROUSEL
                     //Hacer que el carousel ocupe todo el ancho de la pantalla aunque solo se vea una fracción de la imagen
                     //Hacer más pequeña la altura para que visualmente no ocupe tanto
