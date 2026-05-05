@@ -6,6 +6,7 @@
 }
 .ContactPage * {
     box-sizing: content-box !important;
+    color: white;
 }
 
 .Title {

@@ -1,22 +1,78 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+/* =========================
+   NAVBAR BASE
+========================= */
 .Navigation {
-    width: 100% !important;
-
+    width: 100%;
+    padding: 1rem 2rem !important;
+    background-color: transparent;
 }
-
-.NavContainer {
+.NavContainer{
+    width: 100%;
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
-.NavSlogan{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+/* =========================
+   COLUMNAS PRINCIPALES
+========================= */
+.BrandTitle,
+.NavSlogan,
+.NavMenuWrapper{
+    display: flex;
+    flex-direction: column;
+}
 
+/* =========================
+   LOGO
+========================= */
+.BrandTitle img {
+    width: 25%;
+    border-radius: 50%;
+}
+
+/* =========================
+   SLOGAN
+========================= */
+.NavSlogan {
+    align-content: start;
+}
+.NavSloganSmall {
+    color: white;
+}
+.NavSloganBig {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: xx-large;
+    font-weight: 200;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+/* Botón hamburguesa */
+.NavMenu{
+    border: none;
+}
+.NavMenu:focus{
+    box-shadow: none !important;
+}
+.NavIconImage {
+    width: 4em;
+    height: auto;
+}
+
+/* Contenedor del collapse */
+#basic-navbar-nav {
+    background-color: black;
+    z-index: 9999;
+}
+
+/* Links */
 .nav-link {
     color: white !important;
     text-decoration: none;
@@ -25,47 +81,23 @@
     margin-right: 10px;
     opacity: 1 !important;
 }
-
-#basic-navbar-nav {
-    background-color: black;
-    z-index: 9999;
-}
-
 .nav-link:hover,
 .nav-link:focus {
     color: rgba(142, 35, 88, 1) !important;
     text-decoration: none;
 }
-
 .Navigation.navbar-toggler {
     border-color:black;
     border-style: none;
 }
-
 .navbar-toggler:focus {
     box-shadow: none !important;
 }
-
 .Navicon.navbar-toggler.collapsed {
     border-color:black;
 }
 
-.NavIconImage {
-    width: 4em;
-    height: auto;
-}
 
-.BrandTitle img{
-    width: 25%;
-    border-radius: 50%;
-}
 
-.NavSloganSmall{
-    color: white;
-}
-.NavSloganBig{
-    color: white;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: xx-large;
-    font-weight: 200;
-}
+
+

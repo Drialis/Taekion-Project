@@ -16,16 +16,18 @@ const Navigation = () => {
                 <p className='NavSloganSmall'>Abriendo camino</p>
                 <h1 className='NavSloganBig'>STEP BY STEP</h1>
                 </Navbar.Text>
+
+                <div className='NavMenu'>
                 <Navbar.Toggle
                     aria-controls="basic-navbar-nav"
                     className="NavMenu"
                     onClick={() => setExpanded(!expanded)}
-                >
+                    >
                     <img
                         src="https://res.cloudinary.com/du8mlfcf9/image/upload/v1777830741/clipart3518256_lvruie.png"
                         alt="Nav icon"
                         className="NavIconImage"
-                    />
+                        />
                 </Navbar.Toggle>
 
                 <Navbar.Collapse id="basic-navbar-nav">
@@ -44,6 +46,7 @@ const Navigation = () => {
                         </Link>
                     </Nav>
                 </Navbar.Collapse>
+                        </div>
                 </Container>
         </Navbar>
     );
