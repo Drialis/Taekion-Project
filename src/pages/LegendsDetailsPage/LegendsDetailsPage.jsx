@@ -1,4 +1,4 @@
-import { Container } from "react-bootstrap"
+import { Card } from "react-bootstrap"
 
 const LegendsDetailsPage = () => {
 
@@ -6,6 +6,9 @@ const LegendsDetailsPage = () => {
  
         <Card>
             <Card.Img/>
+            <Card.Body>
+
+            </Card.Body>
         </Card>
     )
 }
